@@ -1,0 +1,26 @@
+{
+  "type": "array",
+  "items": {
+    "type" : "object",
+    "properties" : {
+      "name": {
+        "type": "string",
+        "pattern": "^([a-zA-Z0-9_-]{2,50}/[a-zA-Z0-9_-]{2,50})$"
+      },
+      "repository": {
+        "type": "string",
+        "pattern": "^(https://.*\\.git)$"
+      },
+      "definition": {
+        "type": "string",
+        "pattern": "^(https://.*\\.git)$",
+        "optional": true
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "repository"
+    ]
+  }
+}
