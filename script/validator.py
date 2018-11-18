@@ -23,7 +23,7 @@ def main():
 
     for (f, s) in [
         ("modules.json", "schema/registry.json"),
-        ("registry.json", "schema/registry.json"),
+        ("libraries.json", "schema/libraries.json"),
         ("registries.json", "schema/registries.json")]:
         with open(s, 'r') as s:
             schema = json.load(s)
